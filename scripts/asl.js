@@ -4,7 +4,7 @@ let moment = require('moment');
 
 module.exports = (robot) => {
 
-  robot.hear(/asl/, res => {
+  robot.respond(/asl/, res => {
 
     let sex = 'R';
     let location = 'Kortrijk';

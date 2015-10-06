@@ -22,15 +22,15 @@ const geenprobleem = res => {
 
 module.exports = robot => {
 
-  robot.hear(/merci/i, res => {
+  robot.respond(/merci/i, res => {
     geenprobleem(res);
   });
 
-  robot.hear(/bedankt/i, res => {
+  robot.respond(/bedankt/i, res => {
     geenprobleem(res);
   });
 
-  robot.hear(/dank/i, res => {
+  robot.respond(/dank/i, res => {
     geenprobleem(res);
   });
 

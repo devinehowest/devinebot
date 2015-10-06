@@ -26,7 +26,7 @@ const getTrein = (station, res) => {
 
 module.exports = robot => {
 
-  robot.hear(/trein/, res => {
+  robot.respond(/trein/, res => {
 
     let name = res.message.user.name.toLowerCase();
 
