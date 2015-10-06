@@ -11,8 +11,6 @@ const geenprobleem = res => {
 
   let rand = Math.round(Math.random() * (arr.length - 1));
 
-  console.log(rand);
-
   let name = res.message.user.name.charAt(0).toUpperCase()
     + res.message.user.name.toLowerCase().substring(1, res.message.user.name.length);
 
@@ -23,10 +21,6 @@ const geenprobleem = res => {
 module.exports = robot => {
 
   robot.respond(/merci/i, res => {
-    geenprobleem(res);
-  });
-
-  robot.respond(/bedankt/i, res => {
     geenprobleem(res);
   });
 
