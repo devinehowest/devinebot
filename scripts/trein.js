@@ -41,10 +41,4 @@ module.exports = robot => {
 
   });
 
-  robot.hear(/trein (.*)/, res => {
-
-    getTrein(res.match[1], res);
-
-  });
-
 };
