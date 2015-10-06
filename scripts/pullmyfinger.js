@@ -6,11 +6,11 @@ const pull = res => {
 
 module.exports = (robot) => {
 
-  robot.respond(/finger/i, res => {
+  robot.respond(/^finger$/i, res => {
     pull(res);
   });
 
-  robot.respond(/vinger/i, res => {
+  robot.respond(/^vinger$/i, res => {
     pull(res);
   });
 
