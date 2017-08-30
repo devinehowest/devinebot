@@ -19,6 +19,7 @@ const handler = res => {
 module.exports = robot => {
 
   robot.respond(/wat schaft de pot/i, handler);
+  robot.respond(/honger/i, handler);
   robot.respond(/menu/i, handler);
 
 };
